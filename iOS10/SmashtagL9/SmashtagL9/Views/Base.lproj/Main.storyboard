@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uJj-bl-nLW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uJj-bl-nLW">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Tweet" rowHeight="192" id="RO0-ZL-H8B">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserCell" rowHeight="192" id="RO0-ZL-H8B" customClass="UserTableViewCell" customModule="SmashtagL9" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="192"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RO0-ZL-H8B" id="2aa-m1-6Uo">
@@ -27,13 +27,13 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="atT-8P-ABG">
-                                            <rect key="frame" x="16" y="165" width="343" height="21"/>
+                                            <rect key="frame" x="16" y="169" width="343" height="17"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sek-1i-YYA">
-                                            <rect key="frame" x="123" y="17" width="128" height="128"/>
+                                            <rect key="frame" x="123" y="21" width="128" height="128"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="128" id="RHy-4N-srW"/>
                                                 <constraint firstAttribute="width" constant="128" id="dK0-Hu-a0q"/>
@@ -45,9 +45,14 @@
                                         <constraint firstItem="atT-8P-ABG" firstAttribute="leading" secondItem="2aa-m1-6Uo" secondAttribute="leadingMargin" id="7zJ-zg-kcF"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="atT-8P-ABG" secondAttribute="trailing" id="8wy-Jb-w7k"/>
                                         <constraint firstItem="atT-8P-ABG" firstAttribute="bottom" secondItem="2aa-m1-6Uo" secondAttribute="bottomMargin" constant="5" id="KSP-ql-TYL"/>
+                                        <constraint firstItem="sek-1i-YYA" firstAttribute="top" secondItem="2aa-m1-6Uo" secondAttribute="topMargin" constant="10" id="QyU-1w-JjK"/>
                                         <constraint firstItem="atT-8P-ABG" firstAttribute="top" secondItem="sek-1i-YYA" secondAttribute="bottom" constant="20" id="usb-kG-WCI"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="userImageView" destination="sek-1i-YYA" id="5aq-e0-Fux"/>
+                                    <outlet property="userNameLabel" destination="atT-8P-ABG" id="WRh-XG-i6u"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -55,7 +60,13 @@
                             <outlet property="delegate" destination="Y72-0n-pfC" id="TOn-tp-eAb"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="GhP-kv-9SQ"/>
+                    <navigationItem key="navigationItem" id="GhP-kv-9SQ">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="trash" id="P13-vd-FNS">
+                            <connections>
+                                <action selector="clearItems:" destination="Y72-0n-pfC" id="7Pd-zr-wsN"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yvm-fH-cty" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
