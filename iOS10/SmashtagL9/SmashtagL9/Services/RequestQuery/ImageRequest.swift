@@ -36,7 +36,7 @@ class ImageRequest {
                 response?(nil)
                 return
             }
-            guard let httpresponse = networkOperation.response, let responseData = networkOperation.responseData else{
+            guard let _ = networkOperation.response, let responseData = networkOperation.responseData else{
                 response?(nil)
                 return
             }
