@@ -14,6 +14,9 @@
 		9A5783F120BC4E59003E742B /* UserTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5783F020BC4E59003E742B /* UserTableViewController.swift */; };
 		E20ACF7620C1025F0082FAE1 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20ACF7520C1025F0082FAE1 /* UserTableViewCell.swift */; };
 		E20ACF7820C104D70082FAE1 /* ImageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20ACF7720C104D70082FAE1 /* ImageRequest.swift */; };
+		E20DE1C820CF96AC004EF872 /* UserModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E20DE1C620CF96AC004EF872 /* UserModel.xcdatamodeld */; };
+		E20DE1CB20CF9B87004EF872 /* LocalUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20DE1CA20CF9B87004EF872 /* LocalUser.swift */; };
+		E20DE1CD20CF9CBD004EF872 /* LocalUserTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20DE1CC20CF9CBD004EF872 /* LocalUserTableViewController.swift */; };
 		E25CC08620C3BAB20045FC53 /* DesignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25CC08520C3BAB20045FC53 /* DesignView.swift */; };
 		E283C3C720C035D900B4CA5E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E283C3C620C035D900B4CA5E /* User.swift */; };
 		E283C3CC20C03A6600B4CA5E /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = E283C3CB20C03A6600B4CA5E /* Results.swift */; };
@@ -24,6 +27,10 @@
 		E283C3D920C0433100B4CA5E /* GetDataOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E283C3D720C0433100B4CA5E /* GetDataOperation.swift */; };
 		E283C3DD20C048EF00B4CA5E /* UserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E283C3DC20C048EF00B4CA5E /* UserRequest.swift */; };
 		E2BD305520C3E3D90040BB84 /* RoundImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BD305420C3E3D90040BB84 /* RoundImage.swift */; };
+		E2F9558C20CFAD690074183C /* SearchedUsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F9558B20CFAD690074183C /* SearchedUsersTableViewController.swift */; };
+		E2F9558E20CFB0180074183C /* UserInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F9558D20CFB0180074183C /* UserInfoTableViewCell.swift */; };
+		E2F9559020CFB6B40074183C /* FetchedResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F9558F20CFB6B40074183C /* FetchedResultsTableViewController.swift */; };
+		E2F9559220CFB8BC0074183C /* SearchedUsersTableViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F9559120CFB8BC0074183C /* SearchedUsersTableViewController+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +43,9 @@
 		9A5783F020BC4E59003E742B /* UserTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewController.swift; sourceTree = "<group>"; };
 		E20ACF7520C1025F0082FAE1 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		E20ACF7720C104D70082FAE1 /* ImageRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImageRequest.swift; path = SmashtagL9/Services/RequestQuery/ImageRequest.swift; sourceTree = SOURCE_ROOT; };
+		E20DE1C720CF96AC004EF872 /* UserModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UserModel.xcdatamodel; sourceTree = "<group>"; };
+		E20DE1CA20CF9B87004EF872 /* LocalUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalUser.swift; sourceTree = "<group>"; };
+		E20DE1CC20CF9CBD004EF872 /* LocalUserTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalUserTableViewController.swift; sourceTree = "<group>"; };
 		E25CC08520C3BAB20045FC53 /* DesignView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignView.swift; sourceTree = "<group>"; };
 		E283C3C620C035D900B4CA5E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E283C3CB20C03A6600B4CA5E /* Results.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
@@ -46,6 +56,10 @@
 		E283C3D720C0433100B4CA5E /* GetDataOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetDataOperation.swift; sourceTree = "<group>"; };
 		E283C3DC20C048EF00B4CA5E /* UserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRequest.swift; sourceTree = "<group>"; };
 		E2BD305420C3E3D90040BB84 /* RoundImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundImage.swift; sourceTree = "<group>"; };
+		E2F9558B20CFAD690074183C /* SearchedUsersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchedUsersTableViewController.swift; path = SmashtagL9/Controllers/SearchedUsersTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		E2F9558D20CFB0180074183C /* UserInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoTableViewCell.swift; sourceTree = "<group>"; };
+		E2F9558F20CFB6B40074183C /* FetchedResultsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchedResultsTableViewController.swift; sourceTree = "<group>"; };
+		E2F9559120CFB8BC0074183C /* SearchedUsersTableViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchedUsersTableViewController+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +92,7 @@
 		9A5783DC20BC01E3003E742B /* SmashtagL9 */ = {
 			isa = PBXGroup;
 			children = (
+				E20DE1C620CF96AC004EF872 /* UserModel.xcdatamodeld */,
 				E283C3DB20C0481900B4CA5E /* Controllers */,
 				E283C3DA20C0480700B4CA5E /* Views */,
 				E283C3CD20C03B2000B4CA5E /* Services */,
@@ -107,9 +122,18 @@
 			path = RequestQuery;
 			sourceTree = "<group>";
 		};
+		E20DE1C920CF9B49004EF872 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				E20DE1CA20CF9B87004EF872 /* LocalUser.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
 		E283C3C520C02B8F00B4CA5E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E20DE1C920CF9B49004EF872 /* DataModel */,
 				E283C3C820C0380200B4CA5E /* Response */,
 			);
 			path = Models;
@@ -168,6 +192,11 @@
 				E20ACF7520C1025F0082FAE1 /* UserTableViewCell.swift */,
 				E25CC08520C3BAB20045FC53 /* DesignView.swift */,
 				E2BD305420C3E3D90040BB84 /* RoundImage.swift */,
+				E20DE1CC20CF9CBD004EF872 /* LocalUserTableViewController.swift */,
+				E2F9558D20CFB0180074183C /* UserInfoTableViewCell.swift */,
+				E2F9558B20CFAD690074183C /* SearchedUsersTableViewController.swift */,
+				E2F9558F20CFB6B40074183C /* FetchedResultsTableViewController.swift */,
+				E2F9559120CFB8BC0074183C /* SearchedUsersTableViewController+Extensions.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -204,7 +233,7 @@
 				TargetAttributes = {
 					9A5783D920BC01E3003E742B = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -245,11 +274,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A5783DE20BC01E3003E742B /* AppDelegate.swift in Sources */,
+				E20DE1CD20CF9CBD004EF872 /* LocalUserTableViewController.swift in Sources */,
 				E20ACF7820C104D70082FAE1 /* ImageRequest.swift in Sources */,
 				9A5783F120BC4E59003E742B /* UserTableViewController.swift in Sources */,
 				E20ACF7620C1025F0082FAE1 /* UserTableViewCell.swift in Sources */,
+				E20DE1CB20CF9B87004EF872 /* LocalUser.swift in Sources */,
+				E2F9559020CFB6B40074183C /* FetchedResultsTableViewController.swift in Sources */,
+				E2F9558E20CFB0180074183C /* UserInfoTableViewCell.swift in Sources */,
 				E25CC08620C3BAB20045FC53 /* DesignView.swift in Sources */,
+				E20DE1C820CF96AC004EF872 /* UserModel.xcdatamodeld in Sources */,
 				E283C3D120C03DD900B4CA5E /* NetworkingProvider.swift in Sources */,
+				E2F9559220CFB8BC0074183C /* SearchedUsersTableViewController+Extensions.swift in Sources */,
 				E283C3DD20C048EF00B4CA5E /* UserRequest.swift in Sources */,
 				E283C3D920C0433100B4CA5E /* GetDataOperation.swift in Sources */,
 				E283C3D820C0433100B4CA5E /* ASOperations.swift in Sources */,
@@ -258,6 +293,7 @@
 				E283C3D520C03E2600B4CA5E /* URLSessionNetworkConnector.swift in Sources */,
 				E2BD305520C3E3D90040BB84 /* RoundImage.swift in Sources */,
 				E283C3CC20C03A6600B4CA5E /* Results.swift in Sources */,
+				E2F9558C20CFAD690074183C /* SearchedUsersTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,11 +434,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2N2R452CN2;
 				INFOPLIST_FILE = SmashtagL9/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.shaneZLabs.SmashtagL9;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shaneZLabs.csPrac.SmashtagL9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
@@ -414,11 +451,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2N2R452CN2;
 				INFOPLIST_FILE = SmashtagL9/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.shaneZLabs.SmashtagL9;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shaneZLabs.csPrac.SmashtagL9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
@@ -448,6 +486,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E20DE1C620CF96AC004EF872 /* UserModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E20DE1C720CF96AC004EF872 /* UserModel.xcdatamodel */,
+			);
+			currentVersion = E20DE1C720CF96AC004EF872 /* UserModel.xcdatamodel */;
+			path = UserModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9A5783D220BC01E3003E742B /* Project object */;
 }

@@ -8,6 +8,6 @@
 
 import Foundation
 
-struct Results: Codable {
+struct Results: Decodable {
     let results: [User]
 }

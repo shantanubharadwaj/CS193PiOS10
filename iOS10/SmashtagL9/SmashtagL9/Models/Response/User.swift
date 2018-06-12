@@ -8,8 +8,8 @@
 
 import Foundation
 
-struct User: Codable, CustomStringConvertible, Equatable {
-    let gender: String
+struct User: Decodable, CustomStringConvertible, Equatable {
+    let gender: Gender
     let userName: Name
     let location: Location
     let email: String
@@ -19,6 +19,12 @@ struct User: Codable, CustomStringConvertible, Equatable {
     let id: String
     let picture: Media
     let nationality: String
+    
+    enum Gender: String {
+        case male = "male"
+        case female = "female"
+        case unknown = "unknown"
+    }
     
     enum CodingKeys: String, CodingKey {
         case gender
@@ -49,8 +55,12 @@ struct User: Codable, CustomStringConvertible, Equatable {
     
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        
-        gender = try container.decode(String.self, forKey: CodingKeys.gender)
+        let value = try container.decode(String.self, forKey: .gender)
+        if !value.isEmpty {
+            gender = (value.lowercased() == Gender.male.rawValue) ? .male : .female
+        }else{
+            gender = .unknown
+        }
         userName = try container.decode(Name.self, forKey: CodingKeys.userName)
         location = try container.decode(Location.self, forKey: CodingKeys.location)
         email = try container.decode(String.self, forKey: CodingKeys.email)

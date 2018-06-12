@@ -34,6 +34,11 @@ class UserTableViewController: UITableViewController {
         customiseRefreshControl()
     }
     
+    internal func insertUser(_ newUsers: [User]) {
+        self.users.insert(newUsers, at: 0)
+        self.tableView.insertSections([0], with: .fade)
+    }
+    
     func searchUser() {
         let request = UserRequest(count: 15)
         OperationQueue.main.addOperation {
@@ -48,9 +53,8 @@ class UserTableViewController: UITableViewController {
                 }
             }
             if let newUsers = response {
-                OperationQueue.main.addOperation {
-                    self?.users.insert(newUsers, at: 0)
-                    self?.tableView.insertSections([0], with: .fade)
+                OperationQueue.main.addOperation {[weak self] in
+                    self?.insertUser(newUsers)
                 }
             }
         }
@@ -77,9 +81,8 @@ class UserTableViewController: UITableViewController {
                 }
             }
             if let newUsers = response {
-                OperationQueue.main.addOperation {
-                    self?.users.insert(newUsers, at: 0)
-                    self?.tableView.insertSections([0], with: .fade)
+                OperationQueue.main.addOperation {[weak self] in
+                    self?.insertUser(newUsers)
                     refreshControl.endRefreshing()
                 }
             }
